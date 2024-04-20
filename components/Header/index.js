@@ -31,18 +31,18 @@ function Header({ setMenu }) {
                     {/* only for large screen  */}
                     <div className='hidden lg:block text-white my-auto lg:px-10 lg:w-6/12'>
                         <ul className='flex text-sm '>
-                            <li className='pr-14'>
-                                <div className=' border-b-2 pb-2  text-center'>
-                                    <Link href='/' className='cursor-pointer'>HOME</Link>
+                            <li className='pr-14 '>
+                                <div className=' border-b-2 pb-2 text-center hover:text-purple-500 hover:border-purple-500'>
+                                    <Link href='/' className='cursor-pointer '>HOME</Link>
                                 </div>
                             </li>
                             <li className='pr-14'>
-                                <div className=' border-b-2 pb-2  text-center'>
+                                <div className=' border-b-2 pb-2  text-center hover:text-purple-500 hover:border-purple-500'>
                                     <Link href='/aboutus' className='cursor-pointer'>ABOUT</Link>
                                 </div>
                             </li>
                             <li className='pr-14'>
-                                <div className=' border-b-2 pb-2  text-center'>
+                                <div className=' border-b-2 pb-2  text-center hover:text-purple-500 hover:border-purple-500'>
                                     <Link href='/faq' className='cursor-pointer'>FAQ</Link>
                                 </div>
                             </li>
@@ -53,7 +53,7 @@ function Header({ setMenu }) {
 
                 <div className='hidden text-white md:flex md:justify-end md:my-auto md:w-5/12 lg:w-4/12'>
 
-                    <div className='flex hover:cursor-pointer border-b-2 pb-2 mr-10 margin-right'>
+                    <div className='flex hover:cursor-pointer hover:text-purple-500 hover:border-purple-500 border-b-2 pb-2 mr-10 margin-right'>
                         <span className='my-auto'><CiMail /></span>
                         <Link href="#contactUs" className='text-sm ml-2'> CONTACT US</Link>
 

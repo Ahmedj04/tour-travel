@@ -21,7 +21,7 @@ function Footer() {
                             </div>
                             <div className='mt-6 pl-2 pt-1 border-l-2 border-purple-600'>
                                 <h3 className='font-medium'>Mail to our support team</h3>
-                                <h3 className='pt-2 font-medium text-2xl text-purple-600'>support@gmail.com</h3>
+                                <h3 className='pt-2 font-medium text-2xl text-purple-600'>support@trueflights.com</h3>
                             </div>
 
                         </div>
