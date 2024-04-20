@@ -1,0 +1,81 @@
+import React, { useState } from 'react';
+import Link from 'next/link'
+
+import { IoIosMenu } from "react-icons/io";
+import { CiMail } from "react-icons/ci";
+import { SlCalender } from "react-icons/sl";
+
+function Header({ allHotelDetails, hotelDetailLoader, setMenu }) {
+
+    // const [showModalContactUs, setShowModalContactUs] = useState(0);
+
+    return (
+        <section className=' relative border-b-  border-gray-400 bg-transparent'>
+
+            <div className='md:flex md:justify-center'>
+
+                <div className='px-3  py-5 md:w-7/12 lg:w-8/12  flex justify-between md:flex-row-reverse'>
+
+                    {/* property name div */}
+                    <div className='lg:w-6/12 flex'>
+                        {/* {hotelDetailLoader === 0 ? */}
+                        {/* <div className='mx-auto'><Loader size={`h-12 w-40`} /></div> : */}
+                        <div className='inline-block mx-auto text-center'>
+                            <p className='px-4 pt-2 text-2xl text-white font-medium uppercase font-family-marcellus '>
+                                Tour & Travels
+                            </p>
+
+                        </div>
+                        {/* } */}
+                    </div>
+
+                    {/* only for small and medium screen */}
+                    <div className='my-auto lg:hidden'>
+                        <i onClick={() => setMenu(1)}><IoIosMenu size={30} color='white' /></i>
+                    </div>
+
+                    {/* only for large screen  */}
+                    <div className='hidden lg:block text-white my-auto lg:px-10 lg:w-6/12'>
+                        <ul className='flex text-sm '>
+                            <li className='pr-14'>
+                                <div className=' border-b-2 pb-2  text-center'>
+                                    <Link href='/' className='cursor-pointer'>HOME</Link>
+                                </div>
+                            </li>
+                            <li className='pr-14'>
+                                <div className=' border-b-2 pb-2  text-center'>
+                                    <Link href='/aboutus' className='cursor-pointer'>ABOUT</Link>
+                                </div>
+                            </li>
+                            <li className='pr-14'>
+                                <div className=' border-b-2 pb-2  text-center'>
+                                    <Link href='/faq' className='cursor-pointer'>FAQ</Link>
+                                </div>
+                            </li>
+
+
+                            {/* <li><Link href='#home' className='pr-5 underline cursor-pointer'>HOME</Link></li>
+                            <li><Link href='#rooms' className='pr-5 underline cursor-pointer'>ROOMS</Link></li>
+                            <li><Link href='#photos' className='pr-5 underline cursor-pointer'>GALLERY</Link></li>
+                            <li><Link href='#services' className='pr-5 underline cursor-pointer'>SERVICES</Link></li> */}
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div className='hidden text-white md:flex md:justify-end md:my-auto md:w-5/12 lg:w-4/12'>
+
+                    <div className='flex hover:cursor-pointer border-b-2 pb-2 mr-10 margin-right'>
+                        <span className='my-auto'><CiMail /></span>
+                        <Link href="#contactUs" className='text-sm ml-2'> CONTACT US</Link>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+    )
+}
+
+export default Header
