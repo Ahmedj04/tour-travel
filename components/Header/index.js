@@ -1,13 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Link from 'next/link'
-
 import { IoIosMenu } from "react-icons/io";
 import { CiMail } from "react-icons/ci";
-import { SlCalender } from "react-icons/sl";
 
-function Header({ allHotelDetails, hotelDetailLoader, setMenu }) {
-
-    // const [showModalContactUs, setShowModalContactUs] = useState(0);
+function Header({ setMenu }) {
 
     return (
         <section className=' relative border-b-  border-gray-400 bg-transparent'>
@@ -18,8 +14,6 @@ function Header({ allHotelDetails, hotelDetailLoader, setMenu }) {
 
                     {/* property name div */}
                     <div className='lg:w-6/12 flex'>
-                        {/* {hotelDetailLoader === 0 ? */}
-                        {/* <div className='mx-auto'><Loader size={`h-12 w-40`} /></div> : */}
                         <div className='inline-block mx-auto text-center'>
                             <p className='px-4 pt-2 text-2xl text-white font-medium uppercase font-family-marcellus '>
                                 Tour & Travels
@@ -52,12 +46,6 @@ function Header({ allHotelDetails, hotelDetailLoader, setMenu }) {
                                     <Link href='/faq' className='cursor-pointer'>FAQ</Link>
                                 </div>
                             </li>
-
-
-                            {/* <li><Link href='#home' className='pr-5 underline cursor-pointer'>HOME</Link></li>
-                            <li><Link href='#rooms' className='pr-5 underline cursor-pointer'>ROOMS</Link></li>
-                            <li><Link href='#photos' className='pr-5 underline cursor-pointer'>GALLERY</Link></li>
-                            <li><Link href='#services' className='pr-5 underline cursor-pointer'>SERVICES</Link></li> */}
                         </ul>
                     </div>
 

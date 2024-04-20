@@ -1,13 +1,12 @@
-// import Image from "next/image";
 import React, { useState } from 'react'
 import HomeLanding from "@/components/HomeLanding";
 import MenuSM from '@/components/MenuSM';
 import { MdOutlineFlightTakeoff, MdFlightLand } from "react-icons/md";
-// import { PiArrowsLeftRightFill } from "react-icons/pi";
 import Button from '@/components/Button';
 import Footer from '@/components/Footer';
 
 export default function Home() {
+
   const [menu, setMenu] = useState(0)
   const [selectTrip, setSelectTrip] = useState({
     oneWay: 1,

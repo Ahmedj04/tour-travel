@@ -5,7 +5,6 @@ import Link from 'next/link';
 function AboutLanding({ setMenu }) {
 
     return (
-        // <section id='home' className='relative md:h-screen lg:min-h-screen lg:h-fit'>
         <section id='home' className='relative home-bg lg:h-96'>
             {/* this div is used to set the bg-image and set the opacity for it */}
             <div className="absolute inset-0">
