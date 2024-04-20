@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react'
 import { AiOutlineClose } from "react-icons/ai";
 
@@ -19,10 +20,10 @@ function MenuSM({ menu, setMenu }) {
 
                 <div>
                     <ul className='pt-5 font-family-jost-regular' onClick={() => setMenu(0)}>
-                        <li className='pb-2'><a href='#about'>About</a></li>
-                        <li className='pb-2'><a href='#rooms'>Rooms</a></li>
-                        <li className='pb-2'><a href='#photos'>Gallery</a></li>
-                        <li><a href='#services'>Services</a></li>
+                        <li className='pb-2'><Link href='/'>Home</Link></li>
+                        <li className='pb-2'><Link href='/aboutus'>About</Link></li>
+                        <li className='pb-2'><Link href='/faq'>Faq</Link></li>
+                        <li className='pb-2'><Link href='/contact'>Contact</Link></li>
                     </ul>
                 </div>
             </div>

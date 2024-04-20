@@ -35,9 +35,9 @@ function Footer() {
                         </div>
                         <div className='py-5'>
                             <ul>
-                                <li className='pb-4 hover:text-purple-600'><Link href="#home">About Us</Link></li>
-                                <li className='pb-4 hover:text-purple-600'><Link href="#home">Faq</Link></li>
-                                <li className='pb-4 hover:text-purple-600'><Link href="#home"> Contact</Link></li>
+                                <li className='pb-4 hover:text-purple-600'><Link href="/aboutus">About Us</Link></li>
+                                <li className='pb-4 hover:text-purple-600'><Link href="/faq">Faq</Link></li>
+                                <li className='pb-4 hover:text-purple-600'><Link href="/contact"> Contact</Link></li>
                                 <li className='pb-4 hover:text-purple-600'><Link href="#home">Privacy Policy</Link></li>
                             </ul>
 
