@@ -15,7 +15,7 @@ function aboutus() {
 
             <SectionLanding
                 setMenu={setMenu}
-                title="Contact Us"
+                title="About Us"
                 backgroundImage="/aboutus.png"
             />
 
@@ -27,7 +27,7 @@ function aboutus() {
                         {/* column 1 (About us content) */}
                         <div className='px-3 lg:w-6/12'>
                             <div>
-                                <h3 className='text-xl font-medium'>About us</h3>
+                                <h3 className='text-xl font-medium border-b pb-2 border-purple-600 inline-block'>About us</h3>
                                 <h2 className='pt-5 text-4xl font-medium'>We Are The World Best Travel Agency Company Since 2000</h2>
                                 <p className='pt-4 text-slate-400'>At True Flights, we are passionate about travel. We believe that journeys can be life enriching and are happy to assist you in making your travel arrangements. From exotic beach destinations to places brimming with a rich cultural heritage, we help our customers find the perfect trip in absolutely any part of the world.</p>
                                 <p className='pt-4 text-slate-400'>Traveling within a specific budget is not only desired but also necessary for you to get the most out of your vacation. Having a deep understanding of all the factors of traveling, we are committed towards our objective of making your travel desires come true. In our travel portal, you can search a wide array of flight, hotel and rental car deals at prices that fit your budget.</p>
