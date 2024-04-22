@@ -4,9 +4,11 @@ import React, { useState } from 'react'
 import MenuSM from '@/components/MenuSM'
 import Button from '@/components/Button'
 import Image from 'next/image'
+import { useRouter } from 'next/router';
 
 function aboutus() {
     const [menu, setMenu] = useState(0)
+    const router = useRouter();
 
     return (
         <main>
@@ -32,7 +34,7 @@ function aboutus() {
                                 <p className='pt-4 text-slate-400'>We roll out competitive prices on flight tickets, hotel rooms and rental cars from some of the most trusted global brands. We offer you exciting deals to kick-off your vacation, so that it doesn't put a hole in your pocket. You can rest assured that along with price savings, you get to enjoy the exceptional services we provide to you throughout the duration of your trip.</p>
                                 <p className='pt-4 text-slate-400'>Still wondering why you should book with us? We have a hassle-free booking process that can land you amazing travel deals. If you are tired of searching for the best fares, True Flights is here to help you. Simply email at support@trueflights.com and see if we can beat the best price you've found.</p>
                                 <div className='mt-6'>
-                                    <Button text="Contact us" />
+                                    <Button text="Contact us" onClick={() => router.push('/contactus')} />
                                 </div>
                             </div>
                         </div>
