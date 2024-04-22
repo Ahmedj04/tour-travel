@@ -55,7 +55,7 @@ function Header({ setMenu }) {
 
                     <div className='flex hover:cursor-pointer hover:text-purple-500 hover:border-purple-500 border-b-2 pb-2 mr-10 margin-right'>
                         <span className='my-auto'><CiMail /></span>
-                        <Link href="/contact" className='text-sm ml-2'> CONTACT US</Link>
+                        <Link href="/contactus" className='text-sm ml-2'> CONTACT US</Link>
 
                     </div>
 

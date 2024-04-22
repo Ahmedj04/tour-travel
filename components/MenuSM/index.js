@@ -23,7 +23,7 @@ function MenuSM({ menu, setMenu }) {
                         <li className='pb-2'><Link href='/'>Home</Link></li>
                         <li className='pb-2'><Link href='/aboutus'>About</Link></li>
                         <li className='pb-2'><Link href='/faq'>Faq</Link></li>
-                        <li className='pb-2'><Link href='/contact'>Contact</Link></li>
+                        <li className='pb-2'><Link href='/contactus'>Contact</Link></li>
                     </ul>
                 </div>
             </div>

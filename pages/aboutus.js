@@ -1,5 +1,5 @@
 import Footer from '@/components/Footer'
-import AboutLanding from '@/components/AboutLanding'
+import SectionLanding from '@/components/SectionLanding'
 import React, { useState } from 'react'
 import MenuSM from '@/components/MenuSM'
 import Button from '@/components/Button'
@@ -10,12 +10,15 @@ function aboutus() {
 
     return (
         <main>
-            <AboutLanding
-                setMenu={(e) => setMenu(e)}
+
+            <SectionLanding
+                setMenu={setMenu}
+                title="Contact Us"
+                backgroundImage="/aboutus.png"
             />
 
             {/* content section */}
-            <section className='py-24'>
+            <section className='py-16 md:py-24'>
                 <div className='px-3 md:px-20'>
                     {/* row */}
                     <div className='lg:flex'>

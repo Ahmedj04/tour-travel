@@ -37,7 +37,7 @@ function Footer() {
                             <ul>
                                 <li className='pb-4 hover:text-purple-600'><Link href="/aboutus">About Us</Link></li>
                                 <li className='pb-4 hover:text-purple-600'><Link href="/faq">Faq</Link></li>
-                                <li className='pb-4 hover:text-purple-600'><Link href="/contact"> Contact</Link></li>
+                                <li className='pb-4 hover:text-purple-600'><Link href="/contactus"> Contact</Link></li>
                                 <li className='pb-4 hover:text-purple-600'><Link href="#home">Privacy Policy</Link></li>
                             </ul>
 
